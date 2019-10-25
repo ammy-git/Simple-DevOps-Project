@@ -32,6 +32,7 @@ To Delete (On k8s Management Server after root)
 sudo su -
 
 1) export KOPS_STATE_STORE=s3://demo.k8s.amketty.tk
-2) kops delete cluster --name demo.k8s.amketty.tk --yes
+2) kops delete cluster --name demo.k8s.amketty.tk --yes 
+###(It delete all your nodes and master automatically..only edit ur s3 bucket path & rote 53 domain name)####
 
 
