@@ -1,0 +1,14 @@
+# To enable users to access the Tomcat manager page, add a user as the role manager-gui.
+<tomcat-users>
+<!--
+  <role rolename="tomcat"/>
+  <role rolename="role1"/>
+  <user username="tomcat" password="tomcat" roles="tomcat"/>
+  <user username="both" password="tomcat" roles="tomcat,role1"/>
+  <user username="role1" password="tomcat" roles="role1"/>
+-->
+# Add & Edit this line
+	<role rolename="manager-gui"/>
+	<user username="admin" password="admin" roles="manager-gui"/>
+
+</tomcat-users>
